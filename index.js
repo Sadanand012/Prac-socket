@@ -17,7 +17,7 @@ socket.on('user-message', (message) => {
 })
 //frontend file in public
 app.use(express.static("./public"));
-
+//url for geting 
 app.get('/', (req, res) => {
     return res.sendFile("./public/index.html")
 })
